@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .product{
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        border-radius: 10px;
+        color: blue;
+        margin: 10px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 2px 10px 5px blue;
+    }
+</style>
+<body>
+    <h1>Mobiles Page</h1>
+    <a href="/">home</a>
+    {% for i in products %}
+        <div class="product">
+            <h2 >{{i.name}}</h2>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
